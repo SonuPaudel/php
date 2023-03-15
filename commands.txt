@@ -1,0 +1,14 @@
+
+php artisan serve
+
+php artisan make:Controller PagesController
+
+compact('name');
+
+
+https://laravel.com/docs/10.x/starter-kits
+
+composer require laravel/breeze --dev
+php artisan breeze:install
+0 dabau
+yes yes dabau
