@@ -18,6 +18,9 @@ yes yes dabau
 make changes to web.php page sab bigrinxa;
 
 
+views>layouts>app.blade.php ko 15 no wala vite code copy and paste to master wala page ma script ko thau ma replace hanni
+
+
 npm install
 
 npm run dev
