@@ -10,5 +10,15 @@ https://laravel.com/docs/10.x/starter-kits
 
 composer require laravel/breeze --dev
 php artisan breeze:install
+
+options ma 
 0 dabau
 yes yes dabau
+
+make changes to web.php page sab bigrinxa;
+
+
+npm install
+
+npm run dev
+
