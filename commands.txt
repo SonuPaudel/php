@@ -25,3 +25,11 @@ npm install
 
 npm run dev
 
+create new database and change db name in env
+
+new terminal ma php artisan migrate 
+
+delete body part in layouts>app
+and delete all in dashboard under views and extent app
+dashboard navbar should be edited in app> body part
+
