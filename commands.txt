@@ -33,3 +33,8 @@ delete body part in layouts>app
 and delete all in dashboard under views and extent app
 dashboard navbar should be edited in app> body part
 
+php artisan make:controller CategoryController to make CategoryController
+
+recources>views> new folder category then new file index.blade.php 
+
+
