@@ -38,3 +38,29 @@ php artisan make:controller CategoryController to make CategoryController
 recources>views> new folder category then new file index.blade.php 
 
 
+add datatable folder in public folder 
+then goto app.blade.php and add these links on 14,15,16 above vite
+    <link rel="stylesheet" href="{{ asset('datatable/datatables.css') }}">
+    <script src="{{ asset('datatable/jquery-3.6.0.js') }}"></script>
+    <script src="{{ asset('datable/datatables.js') }}"></script>
+
+
+
+    php artisan make:modal Category -m
+
+    then edit on migration latest as required fields under schema
+    php artisan migrate
+
+
+    app>modal>category>
+    class bhitra{
+         protected $fillable = [
+        'name',
+        'priority'
+    ];
+    }
+    resource>views>category>create.blade.php
+
+
+    create a view using create funbction which returns category.create route 
+    and add route with name category.create name and route>create also with category/create page url
