@@ -48,9 +48,11 @@ then goto app.blade.php and add these links on 14,15,16 above vite
 
     php artisan make:modal Category -m
 
-    then edit on migration latest as required fields under schema
+    database>migration>then edit on migration latest as required fields under schema
+
     php artisan migrate
 
+   
 
     app>modal>category>
     class bhitra{
@@ -59,8 +61,15 @@ then goto app.blade.php and add these links on 14,15,16 above vite
         'priority'
     ];
     }
-    resource>views>category>create.blade.php
+     create resource>views>category>create.blade.php
+     then include in route>web.php
+     function on the CategoryController public create()
+     link in index.blade.php button and in create.blade.php
 
+     store() functiion on the Categorycontroller 
+     route>web.php ma lekhni post ma rakhni
 
-    create a view using create funbction which returns category.create route 
-    and add route with name category.create name and route>create also with category/create page url
+     create ma include garni route bata ani method-POST
+
+      @csrf(token) create.blade.php ma 6 ma lekhni 
+     function bhitra lekhni k vanda as per required 
