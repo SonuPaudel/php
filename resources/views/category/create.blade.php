@@ -4,8 +4,14 @@
 
 <form action="{{ route('category.store') }}" method="POST" class="my-10">
     @csrf
-    <input type="text" class="w-full p-2 rounded-lg my-4" name="name" placeholder="Category Name">
-    <input type="text" class="w-full p-2 rounded-lg" name="priority" placeholder="Enter Priority">
+    <input type="text" class="w-full p-2 rounded-lg mt-2" name="name" placeholder="Category Name" value="{{old('name')}}">
+    @error('name')
+    <span class="text-red-500 -mt-4">*{{$message}}</span>
+    @enderror
+    <input type="text" class="w-full p-2 rounded-lg mt-2" name="priority" placeholder="Enter Priority" value="{{old('priority')}}">
+    @error('priority')
+    <span class="text-red-500 -mt-4">*{{$message}}</span>
+    @enderror
 
     <div class="mt-2">
         <input type="submit" class="bg-blue-600 text-white px-2 py-1 rounded-lg cursor-pointer">

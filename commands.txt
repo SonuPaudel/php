@@ -73,3 +73,10 @@ then goto app.blade.php and add these links on 14,15,16 above vite
 
       @csrf(token) create.blade.php ma 6 ma lekhni 
      function bhitra lekhni k vanda as per required 
+ 
+ Categorycontroller>index ma 
+
+ $categoies= Category::all();
+  return view('category.index',compact('categoies'));
+  
+  error message wala code.
