@@ -46,7 +46,7 @@ then goto app.blade.php and add these links on 14,15,16 above vite
 
 
 
-    php artisan make:modal Category -m
+    php artisan make:model Category -m
 
     database>migration>then edit on migration latest as required fields under schema
 
@@ -80,3 +80,13 @@ then goto app.blade.php and add these links on 14,15,16 above vite
   return view('category.index',compact('categoies'));
   
   error message wala code.
+  edit ko code garni 
+  category ma edit file banaauni route dini controller banaauni 
+  update ko code garni route banaauni code haru include garni 
+  action ma route halni 
+
+  delete ko lagi message wala file banaauni layout ma ani include in index file ani delete ko code index file ma rkahni 
+  script la funxction call garni 
+  onclick rakhni index ma
+  delete ko controller banauuni 
+  action ma route dini id garni 

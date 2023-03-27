@@ -1,6 +1,7 @@
+@if(Session::has('success'))
 <div class="fixed top-5 right-5">
     <p class="px-2 py-2 bg-green-400 text-white font-bold text-xl" id="message">
-        Data Added succesfully
+        {{session('success')}}
 
     </p>
     <script>
@@ -10,3 +11,4 @@
     </script>
 
 </div>
+@endif

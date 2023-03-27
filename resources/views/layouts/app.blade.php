@@ -26,6 +26,7 @@
             </div>
             <div class="mt-12">
                 <a href="{{route('dashboard')}}" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Dashboard</a>
+                <a href="{{ route('notice.index')}}" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Notice</a>
                 <a href="{{route('category.index')}}" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Category</a>
                 <a href="" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">News</a>
                 <a href="" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Media</a>

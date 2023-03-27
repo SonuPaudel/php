@@ -1,26 +1,26 @@
 @extends('layouts.app')
 @section('content')
 @include('layouts.message')
-<h2 class="text-4xl font-bold border-b-4 text-blue-300 border-black">Category</h2>
+<h2 class="text-4xl font-bold border-b-4 text-blue-300 border-black">Notice</h2>
 
 <div class="my-4 text-right">
-    <a href="{{ route('category.create') }}" class="bg-blue-600 text-white rounded-lg px-3 py-2">Add Category</a>
+    <a href="{{ route('notice.create') }}" class="bg-blue-600 text-white rounded-lg px-3 py-2">Add Notice</a>
 </div>
 <table id="example" class="display w-auto">
     <thead>
         <th>Order</th>
-        <th>Category Name</th>
+        <th>Notice</th>
         <th>Action</th>
     </thead>
 
     <tbody>
-        @foreach($categories as $category)
+        @foreach($notices as $notice)
         <tr>
-            <td>{{$category->priority}}</td>
-            <td>{{$category->name}}</td>
+            <td>{{$notice->priority}}</td>
+            <td>{{$notice->notice}}</td>
             <td>
-                <a href="{{ route('category.edit',$category->id)}}" class="bg-blue-600 text-white px-4 py-1 rounded-lg mx-1">Edit</a>
-                <a onclick="showDelete('{{$category->id}}')" class="bg-red-600 text-white px-4 py-1 rounded-lg mx-1  cursor-pointer">Delete</a>
+                <a href="{{ route('notice.edit',$notice->id)}}" class="bg-blue-600 text-white px-4 py-1 rounded-lg mx-1">Edit</a>
+                <a onclick="showDelete('{{$notice->id}}')" class="bg-red-600 text-white px-4 py-1 rounded-lg mx-1  cursor-pointer">Delete</a>
             </td>
         </tr>
         @endforeach
@@ -30,7 +30,7 @@
     <div class="flex h-full justify-center items-center">
         <div class="bg-white p-10 ">
             <p class="font-bold text-2xl">Are you sure to delete?</p>
-            <form action="{{route('category.delete')}}" method="POST">
+            <form action="{{route('notice.delete')}}" method="POST">
                 @csrf
                 <input type="hidden" id="dataid" name="dataid" value="">
                 <div class="flex mt-10 justify-center ">
