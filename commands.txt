@@ -90,3 +90,6 @@ then goto app.blade.php and add these links on 14,15,16 above vite
   onclick rakhni index ma
   delete ko controller banauuni 
   action ma route dini id garni 
+
+  controller
+  php artisan make:controller GalleryController --model=Gallery
