@@ -2,7 +2,7 @@
 @section('content')
 <h2 class="text-4xl font-bold border-b-4 text-red-500 border-black"> Edit Gallery</h2>
 
-<form action="{{ route('gallery.store') }}" method="POST" enctype="multipart/form-data" class="my-10">
+<form action="{{ route('gallery.update', $gallery->id) }}" method="POST" enctype="multipart/form-data" class="my-10">
     @csrf
     <input type="text" class="w-full p-2 rounded-lg mt-2" name="description" placeholder="Description " value="{{$gallery->description}}">
     @error('description')
