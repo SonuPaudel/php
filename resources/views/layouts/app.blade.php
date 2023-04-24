@@ -32,7 +32,7 @@
                 <a href="{{route('news.index')}}" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">News</a>
 
                 <a href="" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Media</a>
-                <a href="" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Users</a>
+                <a href="{{route('user.index')}}" class="block pl-4 font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">Users</a>
                 <form action="{{route('logout')}}" method="POST" class="font-bold border-b-2 border-blue-500 ml-2 text-xl py-2 hover:bg-blue-600 hover:text-white">
                     @csrf
                     <button type="submit" class="block pl-4 w-full text-left text-xl py-2">Logout</button>

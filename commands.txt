@@ -93,3 +93,7 @@ then goto app.blade.php and add these links on 14,15,16 above vite
 
   controller
   php artisan make:controller GalleryController --model=Gallery
+
+  php artisan make:migration add_role_to_users
+
+  php artisan make:migration
